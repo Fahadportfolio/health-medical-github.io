@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="overflow-x: hidden;">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+    <div class="container-fluid" style="width: 1400px;">
+      <img class="navbar-brand" src="Image/Capture.PNG" width="100px">
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a  href="#Home">Home</a>
+            <a  href="#About">About</a>
+          <a   href="#Services">Services</a>
+          <a href="#Departments">Departments</a>
+          <a  href="#Doctor">Doctor</a>
+          <a  href="#Gallery">Gallery</a>
+          <a  href="#Contact">Contact</a>
+          <a href="#"><button class="button">Make an Appointment</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="Home">
+  <div class="bodyimg">
+    <img src="Image/pcc2.jpg">
+  </div>
+  <div data-aos="fade-right">
+  <div class="WELCOME">
+    <h3>WELCOME TO MEDILAB</h3>
+    <p>We are team of talented designers making websites with Bootstrap</p>
+  </div>
+</div>
+  <div data-aos="fade-up"
+     data-aos-duration="3000">
+  <div class="a">
+    <img src="Image/color1.jpg">
+    <h2>Why Choose<br> Medilab?</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur<br>
+       adipiscing elit, sed do eiusmod tempor <br>
+       incididunt ut labore et dolore magna aliqua.<br> 
+       Duis aute irure dolor in reprehenderit Asperiores<br>
+        dolores sed et. Tenetur quia eos. Autem tempore <br>
+        quibusdam vel necessitatibus optio ad corporis.</p>
+  </div>
+  <a href="#"><button class="btn">Learn More > </button></a>
+  <div class="b">
+    <i class="fa-regular fa-clipboard"></i>
+ <img src="Image/color2.jpg">
+<h3>Corporis<br> voluptates<br><span>officia eiusmod</span></h3>
+<p>Consequuntur sunt aut<br>quasi enim aliquam quae<br> harum pariatur laboris<br> nisi ut aliquip</p>
+  </div>
+  <div class="c">
+    <i class="ai bi-gem"></i>
+ <img src="Image/color2.jpg">
+<h3>Ullamco laboris<br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ladore pan</span></h3>
+<p>Consequuntur sunt aut<br>quasi enim aliquam quae<br> harum pariatur laboris<br> nisi ut aliquip</p>
+  </div>
+  <div class="d">
+    <i class="bi bi-inboxes"></i>
+ <img src="Image/color2.jpg">
+<h3>&nbsp;&nbsp;&nbsp;Labore<br>consequatur<br><span>&nbsp;&nbsp;&nbsp;incidid dolore</span></h3>
+<p>Aut suscipit aut cum<br>
+   nemo deleniti aut omnis.<br> 
+   Doloribus ut maiores omnis facere</p>
+  </div>
+</div>
+</div>
+<div id="About">
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+<section id="a">
+<img src="Image/patientcarenurse.jpg" class="img1">
+<div class="text1">
+  <h1>About Us</h1>
+  <p>Dolor iure expedita id fuga asperiores qui sunt consequatur minima.<br>
+     Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque<br>
+      veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis<br>
+      asperiores placeat.</p>
+</div>
+<div class="text2">
+  <i class="fa-solid fa-vial-circle-check"></i>
+  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
+  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade.</p>
+</div>
+
+<div class="text3">
+  <i class="fa fa-pump-medical"></i>
+  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
+  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi.</p>
+</div>
+
+<div class="text4">
+  <i class="fa fa-heart-circle-xmark"></i>
+  <h5>Voluptatem et qui exercitationem</h5>
+  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+</div>
+</div>
+</div>
+</section>
+<div class="container1">
+<div class="background">
+  <div data-aos="flip-right">
+  <div class="Doctor">
+    <i class="fa-solid fa-user-doctor" style="margin-top: -70px; margin-left:2px; font-size: 50px;"></i>
+    <h1>85</h1>
+    <p>Doctors</p>
+  </div>
+  <div class="Departments">
+    <i class="fa-regular fa-hospital" style="margin-top:-40px;margin-left:-30px; font-size: 50px;"></i>
+    <h1>18</h1>
+    <p>Departments</p>
+  </div>
+  <div class="Lab">
+    <i class="fas fa-flask" style="font-size: 50px;margin-top: -55px; color: blue;"></i>
+    <h1>12</h1>
+    <p>Research Labs</p>
+  </div>
+  <div class="Awards">
+    <i class="fas fa-award" style="font-size: 50px; color: blue;margin-top: -40px;"></i>
+        <h1>158</h1>
+    <p>Awards</p>
+  </div>
+</div>
+</div> 
+</div>
+<div id="Services">
+<section>
+  <div class="text5">
+<h1>Services</h1>
+<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+<div class="col1">
+  <div class="card1">
+    <div class="icon">
+      <i class="fas fa-heartbeat" style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Nesciunt Mete</h5>
+        <p class="card-text">
+    Provident nihil minus qui consequatur<br>
+    non omnis maiores. Eos accusantium minus<br>
+     dolores iure perferendis tempore et consequatur.
+      </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+<div class="col2">
+  <div class="card1">
+    <div class="icon">
+      <i class="fas fa-pills" style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Eosle Commodi</h5>
+        <p class="card-text">
+          Ut autem aut autem non a. Sint sint sit <br>
+          facilis nam iusto sint. Libero corrupti <br>
+          neque eum hic non ut nesciunt dolorem.
+      </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+<div class="col3">
+  <div class="card2">
+    <div class="icon">
+      <i class="fas fa-hospital-user" style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Ledo Markt</h5>
+        <p class="card-text">
+          Ut excepturi voluptatem nisi sed. Quidem<br>
+           fuga consequatur. Minus ea aut. Vel qui<br>
+            id voluptas adipisci eos earum corrupti.
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+
+<div class="col1">
+  <div class="card1">
+    <div class="icon">
+      <i class="fas fa-dna"style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Asperiores Commodit</h5>
+        <p class="card-text">
+          Non et temporibus minus omnis sed dolor<br>
+           esse consequatur. Cupiditate sed error<br>
+           ea fuga sit provident adipisci neque.
+      </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+
+<div class="col2">
+  <div class="card1">
+    <div class="icon">
+      <i class="fas fa-wheelchair" style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Velit Doloremque</h5>
+        <p class="card-text">
+          Cumque et suscipit saepe. Est maiores autem <br>
+          enim facilis ut aut ipsam corporis aut. <br>
+          Sed animi at autem alias eius labore.
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+
+<div class="col3">
+  <div class="card2">
+    <div class="icon">
+      <i class="fas fa-notes-medical" style="margin-left: 130px;"></i>
+      <div class="card-body">
+        <h5 class="card-title">Dolori Architecto</h5>
+        <p class="card-text">
+          Hic molestias ea quibusdam eos. <br>
+          Fugiat enim doloremque aut neque<br>
+           non et debitis iure. Corrupti recusandae<br>
+          ducimus enim.
+        </p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div> 
+</section>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+
+<div class="text6">
+  <h1>Appointment</h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+<div class="form">
+  <form>
+    <input type="text" name="text" placeholder="&nbsp;Your Name">
+    <input type="text" name="text" placeholder="&nbsp;Your Email">
+    <input type="text" name="text" placeholder="&nbsp;Your Phone">
+    <br><br><br>
+    <input type="Date" name="date">
+    <select class="option">
+      <option>Select Departments</option>
+      <option>Departments 1</option>
+      <option>Departments 2</option>
+      <option>Departments 3</option>
+    </select>
+    <select class="option">
+      <option>Select Doctor</option>
+      <option>Doctor Fahad</option>
+      <option>Doctor Sana</option>
+      <option>Doctor Yasmin</option>
+    </select>
+    <textarea placeholder="&nbsp;Message"></textarea>
+    <br>
+    <a href="#"><button class="button1">Make an Appointment</button></a>
+  </form>
+</div>
+</div>
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+<div id="Departments">
+<div class="text7">
+  <h1>Departments</h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+<div class="nav-link">
+<a href="#Cardiology">Cardiology</a>
+<a href="#Neurology">Neurology</a>
+<a href="#Hepatology">Hepatology</a>
+<a href="#Pediatrics">Pediatrics</a>
+<a href="#Eye">Eye Care</a>
+</div>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-duration="3000">
+
+<div id="Cardiology">
+<div class="Cardiology">
+<h1>Cardiology</h1>
+<p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata<br>
+ raqer a videna mareta paulona marka</p>
+ <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.<br>
+   Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. <br>
+   Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem<br>
+    quaerat quos qui similique accusamus nostrum rem vero</p>
+</div>
+<img src="img/departments-1.jpg" class="departments-1">
+</div>
+<div id="Neurology">
+<div class="Neurology">
+  <h1>Et blanditiis nemo veritatis excepturi</h1>
+  <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata<br>
+    raqer a videna mareta paulona marka</p>
+    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et<br>
+     reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et <br>
+     velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto <br>
+     madirna desera vafle de nideran pal</p>
+     <img src="img/departments-2.jpg" class="departments-2"> 
+</div>
+</div>
+<div id="Hepatology">
+<div class="Hepatology">
+  <h1>Impedit facilis occaecati odio neque<br> aperiam sit</h1>
+  <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus<br>
+   non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+   <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam.<br>
+     Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam<br>
+      a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+      <img src="img/departments-3.jpg" class="departments-3">
+</div>
+</div>
+<div id="Pediatrics">
+<div class="Pediatrics">
+  <h1>Fuga dolores inventore laboriosam ut est<br> accusamus laboriosam dolore</h1>
+  <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro<br>quis delectus</p>
+  <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum<br>
+     ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error<br>
+      in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam<br>
+       quia a laborum inventore</p>
+  <img src="img/departments-4.jpg" class="departments-4">
+</div>
+</div>
+<div>
+  <div id="Eye">
+  <div class="Eye">
+    <h1>Est eveniet ipsam sindera pad rone<br> matrelat sando reda</h1>
+    <p>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus.<br>
+      Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero<br>
+       atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+       <img src="img/departments-5.jpg" class="departments-5">
+  </div>
+</div>
+</div>
+</div>
+<div id="Doctor">
+  <div class="text8">
+    <h1>Doctors</h1>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  </div>  
+  <img src="img/doctors/12.png" class="img2">
+  <div class="main">
+  <h1>Fahad</h1>
+  <p>Chief Medical Officer (Italy)</p>
+  <h5>Explicabo voluptatem mollitia et repellat qui<br>dolorum quasi</h5>
+</div> 
+  <div class="icon1">
+  <a href="#" class="card-link"><i class="bi bi-twitter-x"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-facebook"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-linkedin"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-instagram"></i></a>
+</div>
+<img src="img/doctors/doctors-2.jpg" class="img3">
+<div class="main1">
+<h1>Sarah Jhonson</h1>
+<p>Anesthesiologist</p>
+<h5>Aut maiores voluptates amet et quis praesentium<br>qui senda para</h5>
+</div> 
+<div class="icon2">
+<a href="#" class="card-link"><i class="bi bi-twitter-x"></i></a>
+<a href="#" class="card-link"><i class="bi bi-facebook"></i></a>
+<a href="#" class="card-link"><i class="bi bi-linkedin"></i></a>
+<a href="#" class="card-link"><i class="bi bi-instagram"></i></a>
+</div>
+<img src="img/doctors/doctors-4.jpg" class="img2">
+<div class="main">
+<h1>Yasmin</h1>
+<p>Neurosurgeon (U.S.A)</p>
+<h5>Dolorum tempora officiis odit laborum officiis<br> et et accusamus</h5>
+</div> 
+<div class="icon1">
+<a href="#" class="card-link"><i class="bi bi-twitter-x"></i></a>
+<a href="#" class="card-link"><i class="bi bi-facebook"></i></a>
+<a href="#" class="card-link"><i class="bi bi-linkedin"></i></a>
+<a href="#" class="card-link"><i class="bi bi-instagram"></i></a>
+</div>
+<img src="img/doctors/doctors-3.jpg" class="img3">
+<div class="main1">
+<h1>William Anderson</h1>
+<p>Cardiology</p>
+<h5>Quisquam facilis cum velit laborum corrupti fuga<br> rerum quia</h5>
+</div> 
+<div class="icon2">
+<a href="#" class="card-link"><i class="bi bi-twitter-x"></i></a>
+<a href="#" class="card-link"><i class="bi bi-facebook"></i></a>
+<a href="#" class="card-link"><i class="bi bi-linkedin"></i></a>
+<a href="#" class="card-link"><i class="bi bi-instagram"></i></a>
+</div>
+</div>
+<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+<header>
+  <h1>Frequently Asked Questions</h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</header>
+<main>
+  <section class="faq">
+      <div class="faq-item">
+          <h2 class="question">&nbsp;&nbsp;&nbsp;Feugiat scelerisque varius morbi enim nunc faucibus?</h2>
+          <p class="answer">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla
+             phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+              cursus turpis massa tincidunt dui.</p>
+      </div>
+      <div class="faq-item">
+          <h2 class="question">&nbsp;&nbsp;&nbsp;Dolor sit amet consectetur adipiscing elit pellentesque?</h2>
+          <p class="answer">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla
+             pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at 
+             elementum eu facilisis sed odio morbi quis.</p>
+      </div>
+      <div class="faq-item">
+        <h2 class="question">&nbsp;&nbsp;&nbsp;Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h2>
+        <p class="answer">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices.
+           Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros 
+           in cursus turpis massa tincidunt dui..</p>
+    </div>
+    <div class="faq-item">
+        <h2 class="question">&nbsp;&nbsp;&nbsp;Perspiciatis quod quo quos nulla quo illum ullam?</h2>
+        <p class="answer">Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore
+           et..</p>
+    </div>
+  </section>
+</main>
+</div>
+<script src="index.js"></script>
+<div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+
+<div id="Gallery">
+<div class="main2">
+  <h1>Gallery</h1>
+  <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+</div>
+<div class="img4">
+  <img src="img/gallery/gallery-1.jpg">
+  <img src="img/gallery/gallery-2.jpg">
+  <img src="img/gallery/gallery-3.jpg">
+  <img src="img/gallery/gallery-4.jpg">
+  <img src="img/gallery/gallery-5.jpg" style="margin-top: 5px;">
+  <img src="img/gallery/gallery-6.jpg" style="margin-top: 5px;">
+  <img src="img/gallery/gallery-7.jpg" style="margin-top: 5px;">
+  <img src="img/gallery/gallery-8.jpg" style="margin-top: 5px;">
+</div>
+</div>
+</div>
+<div id="Contact">
+  <div class="text9">
+    <h2>Contact</h2>
+    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3612811034814!2d-74.00871262483331!3d40.7100626377356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2s!4v1723094775873!5m2!1sen!2s" width="1300" height="300" style="border: 8px; margin-top: 50px; border: 1px solid rgb(235, 196, 196);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>  
+  <div class="form">
+    <form>
+      <input type="text" name="text" placeholder="&nbsp;Your Name">
+      <input type="text" name="text" placeholder="&nbsp;Your Email">
+      <input type="text" name="text" placeholder="&nbsp;Your Phone">
+      <br><br><br>
+      <input type="Date" name="date">
+      <input type="text" name="date" placeholder="&nbsp;Subject">
+      <select class="option">
+        <option>Select Doctor</option>
+        <option>Doctor Fahad</option>
+        <option>Doctor Sana</option>
+        <option>Doctor Yasmin</option>
+      </select>
+      <textarea placeholder="&nbsp;Message"></textarea>
+      <br>
+      <a href="#"><button class="button1">Send a Message</button></a>
+    </form>
+  </div>
+</div>
+  <div class="z"><br>
+<h1>Fahad</h1>
+<p>A108 Adam Street</p>
+<p>New York, NY 535022</p>
+<p><span>Phone:</span>+39 22 .....</p>
+<p><span>Email:</span>nfo@example.com</p>
+<div class="icon3">
+  <a href="#" class="card-link"><i class="bi bi-twitter-x"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-facebook"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-linkedin"></i></a>
+  <a href="#" class="card-link"><i class="bi bi-instagram"></i></a>
+  </div>  
+</div>
+<div class="link">
+   <h4>Useful Links</h4>
+   <a href="#Home"><p>Home</p></a>
+   <a href="#About"><p>About us</p></a>
+   <a href="#Services"><p>Services</p></a>
+   <p>Terms of service</p>
+   <p>Privacy policy</p>
+  </div>
+  <div class="link1">
+    <h4>Our Services</h4>
+    <a href="#"><p>Web Design</p></a>
+    <a href="#"><p>Web Development</p></a>
+    <a href="#"><p>Product Management</p></a>
+    <p>Marketing</p>
+    <p>Graphic Design</p>
+   </div>
+   <div class="link2">
+    <h4>Hic solutasetp</h4>
+    <a href="#"><p>Molestiae accusamus iure</p></a>
+    <a href="#"><p>Excepturi dignissimos</p></a>
+    <a href="#"><p>Suscipit distinctio</p></a>
+    <p>Dilecta</p>
+    <p>Sit quas consectetur</p>
+   </div>
+   <hr class="hr">
+   <h1 style="text-align: center; margin-top: -10px; color: white;">꧁༒☬Fahad☬༒꧂
+  </h1>
+</body>
+</html>
